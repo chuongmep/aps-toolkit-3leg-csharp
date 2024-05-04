@@ -45,9 +45,6 @@ public class Auth
 
         // Start listening for the callback URL
         var listenerTask = StartListener(callbackUrl);
-
-        // Wait for the user to complete the authentication manually
-        // The program will continue execution after the user finishes authentication
         await listenerTask;
 
         return new Token(access_token, token_type, expires_in, refresh_token);
@@ -91,21 +88,18 @@ public class Auth
             var queryParams = System.Web.HttpUtility.ParseQueryString(query);
             var code = queryParams["code"];
 
-            // Update access token and other properties
             var resultToken = await HandleCallback(callbackUrl, code);
             access_token = resultToken.access_token;
             token_type = resultToken.token_type;
             expires_in = resultToken.expires_in;
             refresh_token = resultToken.refresh_token;
 
-            // Respond to the client
             var responseString = "Authentication successful. You can close this window now.";
             var buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
             response.ContentLength64 = buffer.Length;
             await response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
             response.Close();
 
-            // Break out of the loop once authentication is completed
             break;
         }
 
