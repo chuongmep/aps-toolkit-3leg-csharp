@@ -2,8 +2,7 @@
 
 Video Demo 
 
-![auth](docs/auth.mp4)
-
+<video src="https://github.com/chuongmep/aps-toolkit-3leg-csharp/raw/master/docs/auth.mp4" width="300" height="450"></video>
 
 ## Example Python 3-leg APS
 
