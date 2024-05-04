@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aps-toolkit-3leg-csharp", "aps-toolkit-3leg-csharp\aps-toolkit-3leg-csharp.csproj", "{3E9EA47A-F4C6-47E8-A0D9-DC3CBF49E708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9EA47A-F4C6-47E8-A0D9-DC3CBF49E708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9EA47A-F4C6-47E8-A0D9-DC3CBF49E708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9EA47A-F4C6-47E8-A0D9-DC3CBF49E708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9EA47A-F4C6-47E8-A0D9-DC3CBF49E708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
