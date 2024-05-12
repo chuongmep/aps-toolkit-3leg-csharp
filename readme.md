@@ -5,6 +5,8 @@
 
 ## Example Python 3-leg APS
 
+- https://github.com/chuongmep/aps-tookit-auth-3leg-pkce
+
 - https://chuongmep.com/posts/2024-05-01-get-3leg-aps-with-python.html
 
 - https://github.com/chuongmep/aps-python-3leg
